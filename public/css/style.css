@@ -1,0 +1,29 @@
+.main_container{
+    width: 40%;
+    margin: 100px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 5px rgb(229, 229, 229) ;
+}
+
+.form_heading{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.input_box{
+    border: 1px solid black;
+}
+
+.sub_button{
+    display: flex;
+    justify-content: center;
+}
+
+.submit_button{
+    width: 20%;
+    font-size: 1rem;
+    font-family: 'Roboto Slab', serif;
+}
