@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-
 //to connect to mongoDB
 require("./Database/connection");
 
