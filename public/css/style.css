@@ -1,29 +1,108 @@
-.main_container{
-    width: 40%;
-    margin: 100px auto;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 3px 3px 5px rgb(229, 229, 229) ;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.form_heading{
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Roboto Slab', serif;
+:root{
+    --font: 'Roboto Slab', serif;
 }
 
-.input_box{
-    border: 1px solid black;
-}
-
-.sub_button{
+body{
+    font-family: var(--font);
     display: flex;
+    align-items: center;
     justify-content: center;
+    width: 100vw;
 }
 
-.submit_button{
-    width: 20%;
-    font-size: 1rem;
-    font-family: 'Roboto Slab', serif;
+.container{
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: calc(100vw - 60vw);
+    max-width: 100%;
+}
+
+.heading{
+    padding: 25px 0;
+}
+
+.heading h1{
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#form .btn{
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: var(--font);
+    text-transform: uppercase;
+    background-color: white;
+    font-size: 17px;
+    padding: 12px 0;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    margin: 15px auto;
+    transition: background-color 0.3s ease;
+}
+
+#form .btn:hover{
+    background-color: rgb(244, 244, 254);
+}
+
+@media(max-width: 1000px){
+    .container {
+        width: calc(100vw - 40vw);
+        max-width: 100%;
+    }
+}
+
+#form{
+    padding: 30px;
+}
+
+.form-input{
+    margin: 0 0 15px 0;
+    position: relative;
+}
+.form-input label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-input input{
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(200, 200, 200);;
+    border-radius: 3px;
+    padding: 15px 0;
+    padding-left: 10px;
+}
+
+.form-input input:focus{
+    outline: 2px solid rgb(190, 190, 190);
+}
+
+.form-input.success input{
+    border-color: rgb(105, 255, 105);
+}
+
+.form-input.error input{
+    border-color: rgb(255, 25, 25);
+}
+
+.form-input small{
+    color:rgb(255, 25, 25);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-input.error small{
+    visibility: visible;
 }

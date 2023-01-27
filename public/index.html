@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./index.js"></script>
     <title>Registration Form</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
         <div class="heading">
             <h1>Registration Form</h1>
         </div>
-        <form id="form">
+        <form id="form" action="/">
             <div class="form-input">
                 <label for="fname">First Name</label>
                 <input type="text" name="fname" id="fname" placeholder="First Name">
@@ -43,9 +44,8 @@
                 <input type="password" name="cpass" id="cpass" placeholder="Confirm Password">
                 <small>Error!!</small>
             </div>
-            <input class="btn" type="submit" value="Submit">
+            <button type="submit" class="btn">SUBMIT</button>
         </form>
     </div> 
-    <script src="ind.js"></script>
 </body>
 </html>
