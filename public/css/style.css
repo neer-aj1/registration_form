@@ -15,6 +15,9 @@ body{
     align-items: center;
     justify-content: center;
     width: 100vw;
+    overflow-x: hidden;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .container{
